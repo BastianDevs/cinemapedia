@@ -17,7 +17,7 @@ class MovieMapper {
     posterPath:
         (moviedb.posterPath != '')
             ? 'https://image.tmdb.org/t/p/w500/${moviedb.posterPath}'
-            : 'https://img.freepik.com/premium-vector/found-grunge-rubber-stamp_545399-2360.jpg',
+            : 'no-poster',
     releaseDate: moviedb.releaseDate,
     title: moviedb.title,
     video: moviedb.video,
