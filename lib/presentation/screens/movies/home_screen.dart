@@ -37,7 +37,9 @@ class _HomeViewState extends ConsumerState<_HomeView> {
     // if (nowPlayingMovies.length == 0) return CircularProgressIndicator();
     return Column(
       children: [
-        CustomAppbar(),
+        const CustomAppbar(),
+        MoviesSlideshow(movies: nowPlayingMovies),
+        /*
         Expanded(
           child: ListView.builder(
             itemCount: nowPlayingMovies.length,
@@ -47,6 +49,7 @@ class _HomeViewState extends ConsumerState<_HomeView> {
             },
           ),
         ),
+        */
       ],
     );
   }
