@@ -54,6 +54,15 @@ class _Slide extends StatelessWidget {
               }
               return FadeIn(child: child);
             },
+            errorBuilder:
+                (context, error, stackTrace) => Image.network(
+                  errorBuilder:
+                      (context, error, stackTrace) => const Center(
+                        child: Text('Error al cargar la imagen'),
+                      ),
+                  movie.backdropPath.replaceAll('w500', 'original'),
+                  fit: BoxFit.cover,
+                ),
           ),
         ),
       ),
