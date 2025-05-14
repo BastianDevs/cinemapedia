@@ -13,7 +13,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //return Scaffold(body: Center(child: Text(Environment.theMovieDbKey)));
-    return const Scaffold(body: _HomeView());
+    return const Scaffold(
+      body: _HomeView(),
+      bottomNavigationBar: CustomBottonNavigation(),
+    );
   }
 }
 
